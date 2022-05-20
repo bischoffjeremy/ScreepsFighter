@@ -10,6 +10,9 @@ export class TroopAnalyzer {
     constructor() {
     };
 
+    getCreeps(){
+        return getObjectsByPrototype(Creep).filter(creep => !creep.my);
+    }
 
     CountAttacker() {
         return getObjectsByPrototype(Creep).filter(creep => !creep.my).filter(creep => creep.body.some(bodyPart => bodyPart.type === ATTACK)).length;
