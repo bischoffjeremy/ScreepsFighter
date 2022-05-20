@@ -1,6 +1,6 @@
 import {Enemyanalyzer} from "./EnemyAnalyzer.mjs";
 import {TroopAnalyzer} from "./TroopAnalyzer.mjs";
-
+import {Troop} from "../Models/Troop.mjs";
 
 export class PriorityService {
     troopanalyzer;
